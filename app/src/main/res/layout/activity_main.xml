@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/addFragmentButton"
+        android:onClick="onClickButtonUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="button_up" />
+
+    <Button
+        android:id="@+id/onClickButtonLayout"
+        android:onClick="onClickButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="onClickButtonLayout" />
+
+
+    <Button
+        android:id="@+id/buttonUpBt"
+        android:onClick="onClickButtonUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="onClickButtonUp" />
+
     <FrameLayout
         android:id="@+id/buttonFrame"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" >
 
         <fragment
             android:id="@+id/buttonFragment"
@@ -21,10 +46,8 @@
     <FrameLayout
         android:id="@+id/contents"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp" />
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_alignParentBottom="true" />
 
-</LinearLayout>
+</RelativeLayout>
