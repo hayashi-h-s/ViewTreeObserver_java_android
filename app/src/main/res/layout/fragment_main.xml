@@ -16,7 +16,7 @@
 
     <Button
         android:id="@+id/delete_fragment_button"
-        android:onClick="deleteFragmentButton"
+        android:onClick="inFragmentButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="delete_fragment_button" />
